@@ -1,5 +1,3 @@
-from operator import index
-from turtle import right
 import pandas as pd
 import matplotlib.pyplot as plt
 import numpy as np
@@ -84,7 +82,7 @@ def stacked_behavior_know_sum ():
                 arr[j][i] = know_sums.shape[0]
 
     stackedData = pd.DataFrame(arr)
-    print (stackedData)
+    # print (stackedData)
     # columns=[f"Behavior {i}" for i in range(8)], index=[f"Knowledge {i}" for i in range(12)]
 
     stackedData.plot (kind="bar", stacked=True, zorder=3)
